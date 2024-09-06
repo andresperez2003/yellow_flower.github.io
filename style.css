@@ -1,0 +1,178 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB
+    ;
+}
+.corazon {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    top: 5px;
+    left: 10px;
+}
+
+.corazon::before,
+.corazon::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.corazon::before {
+    top: -12.5px;
+    left: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.corazon::after {
+    top: 0;
+    left: 12.5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.flor {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.centro {
+    width: 75px;
+    height: 70px;
+    background-color: #67403A;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    z-index: 1;
+}
+
+.petalo {
+    width: 150px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+
+
+
+.petalo:nth-child(2) {
+    top: -14px;
+    left: -96px;
+    transform: rotate(39deg);
+}
+
+.petalo:nth-child(3) {
+    top: 99px;
+    left: 15px;
+    transform: rotate(49deg);
+}
+
+.petalo:nth-child(4) {
+    top: -17px;
+    left: 23px;
+    transform: rotate(143deg);
+}
+
+.petalo:nth-child(5) {
+    top: 99px;
+    left: -44px;
+    transform: rotate(92deg);
+}
+.petalo:nth-child(6) {
+    top: -34px;
+    left: -39px;
+    transform: rotate(89deg);
+}
+
+.petalo:nth-child(7) {
+    top: 32px;
+    left: 55px;
+    transform: rotate(0deg);
+}
+
+.petalo:nth-child(8) {
+    top: -34px;
+    left: 3px;
+    transform: rotate(115deg);
+}
+
+.petalo:nth-child(9) {
+    top: 16px;
+    left: -124px;
+    transform: rotate(198deg);
+}
+.petalo:nth-child(10) {
+    top: -30px;
+    left: -72px;
+    transform: rotate(60deg);
+}
+
+.petalo:nth-child(11) {
+    top: 65px;
+    left: 31px;
+    transform: rotate(24deg);
+}
+
+.petalo:nth-child(12) {
+    top: 5px;
+    left: 35px;
+    transform: rotate(162deg);
+}
+
+.petalo:nth-child(13) {
+    top: 69px;
+    left: -102px;
+    transform: rotate(147deg);
+}
+.petalo:nth-child(14) {
+    top: 91px;
+    left: -73px;
+    transform: rotate(119deg);
+}
+.petalo:nth-child(15) {
+    top: 93px;
+    left: -12px;
+    transform: rotate(69deg);
+}
+.petalo:nth-child(16) {
+    top: 43px;
+    left: -121px;
+    transform: rotate(167deg);
+}
+
+.tallo{
+    position: absolute;
+    background-color: #67403A;
+    width: 10px;
+    height: 300px;
+    left: 37px;
+    z-index: -1;
+}
+.hoja{
+    z-index: -2;
+    left: 68px;
+    top: 187px;
+    background-color: green;
+    position: absolute;
+    height: 85px;
+    width: 24px;
+    border-radius: 71%;
+    transform: rotate(248deg);
+}
